@@ -5,26 +5,28 @@
   max-width: 1600px;
   min-height: 600px;
   margin: 0 auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-pictures.jpg");
-}
+  &--bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-.hero-title {
-  max-width: 696px;
-  margin: 0 auto 30px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-pictures.jpg");
+  }
 
-  color: var(--color-hero-title);
+  &__title {
+    color: var(--color-hero-title);
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+    @include font(44px, 900, 1.4, 0.06em);
+    text-transform: uppercase;
+
+    &--functional {
+      max-width: 696px;
+      margin: 0 auto 30px;
+    }
+  }
 }

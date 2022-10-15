@@ -1,9 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
+  @include font(14px, 400, 1.7, 0.03em);
+
   color: var(--color-primery-text);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 h1,
