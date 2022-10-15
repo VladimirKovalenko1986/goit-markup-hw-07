@@ -1,0 +1,64 @@
+.conteiner {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  //   outline: 1px solid tomato;
+}
+
+// All properties
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--color-secondery-text);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-text-logonav);
+}
+
+.linksecondery {
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--color-text-logonav);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+// Modal
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

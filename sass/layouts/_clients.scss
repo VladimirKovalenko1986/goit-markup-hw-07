@@ -1,0 +1,40 @@
+.clients {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: flex;
+  width: calc((100% - 150px) / 6);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icons-partners);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  transition: border 250ms var(--cubic-all);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--color-text-logonav);
+}
+
+.clients-link svg {
+  fill: var(--color-icons-partners);
+
+  transition: fill 250ms var(--cubic-all);
+}
+
+.clients-link:hover svg,
+.clients-link:focus svg {
+  fill: var(--color-text-logonav);
+}

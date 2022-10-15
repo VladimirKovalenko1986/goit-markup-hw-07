@@ -1,0 +1,51 @@
+.ocupation {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.ocupation-list {
+  display: flex;
+}
+
+.ocupation-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.ocupation-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.ocupation-conteiner {
+  position: relative;
+}
+
+.ocupation-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  background-color: var(--color-bg-ocupation-text);
+
+  width: 100%;
+  height: 70px;
+}
+
+.ocupation-conteiner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: var(--color-hero-title);
+
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  transform: translate(-50%, -50%);
+}
+
+.ocupatin-img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
