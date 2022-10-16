@@ -1,107 +1,110 @@
+.footer {
+  background-color: var(--color-bgn-hero);
+
+  &--functional {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .conteiner--footer {
   display: flex;
   align-items: baseline;
 }
 
-.footer {
-  background-color: var(--color-bgn-hero);
+.address {
+  font-style: normal;
 
-  &--function {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+
+    color: var(--color-hero-title);
+
+    &--functional {
+      color: var(--color-footer-text);
+
+      transition: color 250ms var(--cubic-all);
+
+      &:hover,
+      &:focus {
+        color: var(--color-hero-title);
+      }
+    }
   }
 }
 
-.footer-content {
-}
-
-.footer-address {
-  font-style: normal;
-}
-
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-link {
-  display: block;
-
-  color: var(--color-hero-title);
-}
-
-.footer-contact {
-  display: block;
-
-  color: var(--color-footer-text);
-
-  transition: color 250ms var(--cubic-all);
-}
-
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--color-hero-title);
-}
-
-.wrapper-conteiner {
+.box-social {
   margin-left: 70px;
+
+  &__text {
+    color: var(--color-hero-title);
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--functional {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 }
 
-.footer-text {
-  display: block;
-  margin-bottom: 20px;
+.social-footer {
+  @include flex-centered;
 
-  color: var(--color-hero-title);
+  &__item:not(:first-child) {
+    margin-left: 10px;
+  }
 
-  font-weight: 700;
-  text-transform: uppercase;
+  &__link {
+    border-radius: 50%;
+
+    @include flex-centered;
+
+    &--sizelink {
+      width: 44px;
+      height: 44px;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      transition: background-color 250ms var(--cubic-all);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-text-logonav);
+    }
+  }
+
+  &__icon {
+    fill: var(--color-hero-title);
+  }
 }
 
-.footer-list-social {
-  display: flex;
-}
-
-.footer-item-social {
-}
-
-.footer-link-social {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color 250ms var(--cubic-all);
-}
-
-.footer-link-social:hover,
-.footer-link-social:focus {
-  background-color: var(--color-text-logonav);
-}
-
-.footer-item-social:not(:first-child) {
-  margin-left: 10px;
-}
-
-.footer-link-social svg {
-  fill: var(--color-hero-title);
-}
-
-.wrapper-conteiner-form {
+.box-form {
   margin-left: auto;
+
+  &__text {
+    color: var(--color-hero-title);
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--functional {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .conteiner-form {
   display: flex;
 }
 
-.footer-form-input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  border-radius: 4px;
+.form-footer__input {
   border: 1px solid var(--color-border-footer-form);
   outline: none;
 
@@ -109,28 +112,34 @@
 
   background: none;
 
-  transition: border 250ms var(--cubic-all);
+  &:focus {
+    border: 1px solid var(--color-text-logonav);
+
+    &::placeholder {
+      color: var(--color-text-logonav);
+    }
+  }
+
+  &--functional {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border-radius: 4px;
+
+    transition: border 250ms var(--cubic-all);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+
+    color: var(--color-footer-text);
+  }
 }
 
-.footer-form-input:focus {
-  border: 1px solid var(--color-text-logonav);
-}
-
-.footer-form-input::placeholder {
-  //   padding-left: 16px;
-
-  font-size: 16px;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-
-  color: var(--color-footer-text);
-}
-
-.footer-form-input:focus::placeholder {
-  color: var(--color-text-logonav);
-}
-
-.btn-footer-form svg {
+// SVG
+.btn__svg {
   position: absolute;
   top: 50%;
   //   right: 8px;
